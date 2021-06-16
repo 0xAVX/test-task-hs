@@ -1,0 +1,28 @@
+{
+  "name": "pixi-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "valentin zgonnik",
+  "license": "none",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "pixi.js": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.8",
+    "@types/pixi.js": "^5.0.0",
+    "babel-loader": "^8.2.2",
+    "stats.js": "^0.17.0",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "scripts": {
+    "start": "webpack-cli serve --mode development --host 0.0.0.0 --hot --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  }
+}
